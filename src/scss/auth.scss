@@ -1,0 +1,119 @@
+@import "variables";
+
+#drclubs-auth-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  text-align: right;
+  overflow: hidden;
+
+  .auth-btn {
+    margin: 20px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &.hide {
+      display: none;
+    }
+    button {
+      padding: 20px;
+      border-radius: 4px;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary-hover;
+      }
+    }
+  }
+
+  .auth-container {
+    transition: transform 200ms ease;
+    transform: translateX(300px);
+    width: 220px;
+    margin: 20px;
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
+    &.show {
+
+      transform: translateX(0);
+    }
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .close {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  label {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    margin-bottom: 10px;
+    padding: 4px;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+  }
+  input[type="submit"] {
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    padding: 6px;
+    color: #fff;
+    background-color: $primary-color;
+    &:hover {
+      background-color: $primary-hover;
+
+    }
+  }
+
+  .actions {
+    text-align: center;
+    margin-bottom: 0;
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin: 0 4px;
+
+    }
+  }
+  .status {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &.error {
+      color: red;
+    }
+    &.success {
+      color: rgb(47, 129, 47);
+    }
+  }
+}

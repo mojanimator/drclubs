@@ -1,0 +1,95 @@
+@import "variables";
+
+//@import "~bootstrap/dist/css/bootstrap.rtl.css";
+
+$font-path: "../fonts";
+//@font-face {
+//
+//  font-family: Tanha;
+//  src: url("#{$font-path}/Tanha-FD.eot");
+//  src: url('#{$font-path}/Tanha-FD.eot?#iefix') format('embedded-opentype'),
+//  url('#{$font-path}/Tanha-FD.woff2') format('woff2'),
+//  url('#{$font-path}/Tanha-FD.woff') format('woff'),
+//  url('#{$font-path}/Tanha-FD.ttf') format('truetype');
+//
+//  font-weight: normal;
+//  font-style: normal;
+//
+//  font-display: swap;
+//}
+@font-face {
+
+  font-family: Tanha;
+  src: url("#{$font-path}/Vazir.eot");
+  src: url('#{$font-path}/Vazir.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/Vazir.woff') format('woff'),
+  url('#{$font-path}/Vazir.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+
+  font-display: swap;
+}
+
+.drclubs {
+
+
+  @import "tabs";
+  @import "radio";
+  //@import "~code-prettify/styles/desert.css";
+  @import "loader";
+  @import "register-form";
+  @import "form";
+  @import "checkbox";
+  @import "my-bootstrap";
+  //@import "~bootstrap/scss/bootstrap";
+
+  //* {
+  //
+  //  font-family: Tanha /*, Roboto, Tangerine,*/
+  //  , serif !important;
+  //
+  //}
+
+
+  .m-card {
+    border: none;
+
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: $card_shadow;
+    border-radius: $radius;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome, Edge, Opera and Firefox */
+  }
+
+  .scale-on-hover {
+
+    transition: all ease 0.2s;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}

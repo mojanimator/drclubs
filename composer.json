@@ -1,0 +1,27 @@
+{
+  "name": "drclubs/drclubs",
+  "description": "drclubs.ir",
+  "type": "project",
+  "license": "GPL",
+  "autoload": {
+    "psr-4": {
+      "DrClubs\\": "./inc"
+    }
+  },
+  "authors": [
+    {
+      "name": "develowper",
+      "email": "moj2raj2@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.1.8 || ^8.0",
+    "tightenco/collect": "8.83.15",
+    "symfony/translation": "5.1.11",
+    "nesbot/carbon": "2.61.0",
+    "morilog/jalali": "^3.1",
+    "symfony/var-dumper": "4.4.44",
+    "symfony/polyfill-php81": "1.27.0"
+  }
+}
