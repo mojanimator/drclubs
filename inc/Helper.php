@@ -23,7 +23,7 @@ class Helper
     static $postType = 'book';
     static $postTypeLabel = 'Books';
 
-    static $TELEGRAM_LOG_ACTIVE = true;
+    static $TELEGRAM_LOG_ACTIVE = false;
     static $SITE_LOG_ACTIVE = false;
 
     static function prefix()
